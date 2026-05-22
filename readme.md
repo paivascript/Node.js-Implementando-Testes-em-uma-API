@@ -107,3 +107,8 @@ erDiagram
   "modoPagamento": "CARTAO_CREDITO"
 }
 ```
+
+
+ npm run exec limpar-banco  pra limpar banco
+ npm install supertest -> testes E2E# Node.js-Implementando-Testes-em-uma-API
+# Node.js-Implementando-Testes-em-uma-API

@@ -29,6 +29,10 @@ export class AutoresController {
 
   async cadastrarAutor(req, res) {
     const { body } = req;
+        if(!body.nome || !body.nacionalidade) {
+        return res.status(400).json({ message: 'Dados inválidos para cadastrar o autor', type:'INVALID_DAATA' });
+      }
+
     const autor = new Autor(body);
     try {
       const resposta = await autor.salvar(autor);
